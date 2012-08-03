@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Sebastien Fanals CV</title>
+
+		<meta name="author" content="Sebastien Fanals">
+		<link rel="stylesheet" href="default.css" type="text/css" media="all" />		
+		<link rel="shortcut icon" href="cv_icon.gif">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('#fr-flag').click(function()
+				{
+					if ($('.fr').attr('style') == "display: none; ")
+					{
+						$("#print-download a").attr({'href':'CV%20Sebastien%20Fanals%20FR.pdf'})
+						var flagFade = true;
+						var flagSlide = true;
+						$('.us').slideToggle('slow', function()
+						{
+							if (flagSlide)
+							{
+								$('.fr').slideToggle('slow', function()
+									{
+										$('.title-us').fadeOut('normal', function()
+										{
+											if (flagFade)
+											{
+												$('.title-fr').fadeIn('normal');
+											}
+											flagFade = false
+										})
+									});
+							}
+							flagSlide = false;
+						})
+					}
+				});
+				$('#us-flag').click(function()
+				{
+					if ($('.us').attr('style') == "display: none; ")
+					{
+						$("#print-download a").attr({'href':'CV%20Sebastien%20Fanals%20EN.pdf'})
+						var flagFade = true;
+						var flagSlide = true;
+						$('.fr').slideToggle('slow', function()
+						{
+							if (flagSlide)
+							{
+								$('.us').slideToggle('slow', function()
+									{
+										$('.title-fr').fadeOut('normal', function()
+										{
+											if (flagFade)
+											{
+												$('.title-us').fadeIn('normal');
+											}
+											flagFade = false
+										})
+									});
+							}
+							flagSlide = false;
+						})
+					}
+				});
+			});
+		</script>
+
+	</head>
+	<body>
+		<div class="container">
+
+			<div id="profil" class="content">
+				
+				<img id="profile-picture" src="profil.jpeg" alt="profil picture">
+				<h2 id="my-name">Sebastien Fanals</h2>
+				
+				<div id="info" class="content">
+					<p>12 rue de la république <i class="icon-home icon-white"></i></p>
+					<p>Lyon, 69002 <i class="icon-map-marker icon-white"></i></p>
+					<p><a href="tel:0612308207">06 12 30 82 07</a> <i class="icon-signal icon-white"></i></p>
+					<p><a href="mailto:sebastien@fanals.fr"> sebastien@fanals.fr</a> <i class="icon-envelope icon-white"></i></p>
+					<p id="print-download">
+						<a class="button" href='CV%20Sebastien%20Fanals%20EN.pdf'><i class="icon-print"></i> Print</a>
+						<a class="button" href='CV%20Sebastien%20Fanals%20EN.pdf'><i class="icon-download-alt"></i> Download</a>
+					</p>
+				</div>
+				<div class="clear"></div>
+				<table id="flags">
+					<tr>
+						<td><img id="fr-flag" src="fr.png" alt="fr logo" /></td>
+						<td><img id="us-flag" src="us.png" alt="us logo" /></td>
+					</tr>
+				</table>
+			</div>
+
+			<div id="education" class="content">
+				<h2 class="title-fr green" style="display: none; ">Formation &raquo; </h2>
+				<h2 class="title-us green" style="display: block; ">Education &raquo; </h2>
+				<hr>
+				<div class="fr" style="display: none; ">
+					<div class="content">
+						<h4><i class="icon-share-alt icon-white"></i> <a href="http://www.epitech.eu">EPITECH</a></h4>
+						<p><span class="label label-green">European Institute of Technology - De Septembre 2008 à Aujourd'hui</span></p>
+						<p>Entré en 5ème et dernière année avec un master à la clef.</p>
+					</div>
+					<div class="content">
+						<h4><i class="icon-share-alt icon-white"></i> <a href="http://www.berkeley.edu">UC Berkeley</a></h4>
+						<p><span class="label label-green">Berkeley University - Juin à Août 2012</span></p>
+						<p>Programmation haut niveau: python (2.X and 3.X).<br>Architecture Web (HTML5 / CSS3 / JS/ jQuery)</p>
+					</div>
+					<div class="content">
+						<h4><i class="icon-share-alt icon-white"></i> <a href="http://www.csulb.edu">CSU Longbeach</a></h4>
+						<p><span class="label label-green">California state University Longbeach - Janvier à Juin 2012</span></p>
+						<p>Systèmes d’exploitation. Sécurité Informatique.<br>Compilateur realisé en objective-C.</p>
+					</div>
+				</div>
+				<div class="us" style="display: block; ">
+					<div class="content">
+						<h4><i class="icon-share-alt icon-white"></i> <a href="http://www.epitech.eu">EPITECH</a></h4>
+						<p><span class="label label-green">European Institute of Technology - September 2008 - Today</span></p>
+						<p>Entering in fifth and final year at EPITECH to a master.</p>
+					</div>
+					<div class="content">
+						<h4><i class="icon-share-alt icon-white"></i> <a href="http://www.berkeley.edu">UC Berkeley</a></h4>
+						<p><span class="label label-green">Berkeley University - June to August 2012</span></p>
+						<p>High-level programming using python (2.X and 3.X). <br>Web architecture (HTML5 / CSS3 / JS / jQuery)</p>
+					</div>
+					<div class="content">
+						<h4><i class="icon-share-alt icon-white"></i> <a href="http://www.csulb.edu">CSU Longbeach</a></h4>
+						<p><span class="label label-green">California state University Longbeach - January to June 2012</span></p>
+						<p>Operating systems, Computer security, <br>Compiler Construction using objective-C</p>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div id="work" class="content">
+				<h2 class="title-fr red" style="display: none; ">Experience professionnelle &raquo; </h2>
+				<h2 class="title-us red" style="display: block; ">Work Experience &raquo; </h2>
+				<hr>
+				<div class="fr" style="display: none; ">
+					<div class="content">
+						<h4>
+							<i class="icon-share-alt icon-white"></i> <a href="http://ithanks.fr">Co-fondateur et développeur en chef. Objective-C</a>
+						</h4>
+						<p><span class="label label-red">iThanks - Janvier 2011 à Aujourd'hui</span></p>
+						<p>Réalisation d’une application iPhone dans le domaine de la fidélisation entièrement piloté et administré par un CRM en ligne (CRM également développé par iThanks)</p>
+					</div>
+					<div class="content">
+						<h4><i class="icon-share-alt icon-white"></i> <a href="http://www.kreactive.com">Ingénieur développement. Javascript</a></h4>
+						<p><span class="label label-red">Kreactive - Septembre 2009 à Janvier 2010</span></p>
+						<p>Dévelopement de widgets multi-platforme (igoogle, netvibes, windows vista, facebook) en HTML / CSS / Javascript / Mootools pour des clients tels que Orange, Sport24, etc</p>
+					</div>
+					<div class="content">
+						<h4><i class="icon-share-alt icon-white"></i> <a href="http://www.epitech.eu">Assistant pédagogique. Langage C</a></h4>
+						<p><span class="label label-red">EPITECH - Juin 2010 à Aujourd'hui</span></p>
+						<p>Cours au tableau dispensés aux élèves de première année dans le but d'approfondir leurs connaissances sur le langage de programmation C. <br>Suivi des élèves en difficulté tout au long de l'année.</p>
+					</div>
+				</div>
+				<div class="us" style="display: block; ">
+					<div class="content">
+						<h4><i class="icon-share-alt icon-white"></i> <a href="http://ithanks.fr">Co-founder and lead developer. Objective-C</a></h4>
+						<p><span class="label label-red">iThanks - January 2011 - Today</span></p>
+						<p>Creation of a loyalty-based iPhone application entirely driven and managed by an online CRM (also developed by iThanks). </p>
+					</div>
+					<div class="content">
+						<h4><i class="icon-share-alt icon-white"></i> <a href="http://www.kreactive.com">Software engineer. Javascript</a></h4>
+						<p><span class="label label-red">Kreactive - September 2009 to January 2010</span></p>
+						<p>Development of multi-platform widgets (igoogle, netvibes, windows vista, facebook) in HTML / CSS / Javascript. I wrote several widgets for clients like Orange, Sport24, Telethon, etc. </p>
+					</div>
+					<div class="content">
+						<h4><i class="icon-share-alt icon-white"></i> <a href="http://www.epitech.eu">Teaching Assistant. C langage</a></h4>
+						<p><span class="label label-red">EPITECH - June 2010 to June 2012</span></p>
+						<p>Helped first and second year students with their projects in C langage.</p>
+					</div>
+				</div>	
+			</div>
+		    
+		    <div id="expertise" class="content">
+				<h2 class="title-fr purple" style="display: none; ">Expertise &raquo; </h2>
+				<h2 class="title-us purple" style="display: block; ">Expertise &raquo; </h2>
+				<hr>
+				<div class="fr" style="display: none; ">
+					<div class="content">
+						<p>Grâce à ma formation, j’ai acquis une certaine expertise dans le domaine de la programmation et dans la capacité à pouvoir très rapidement assimiler de nouveaux langages. <br>Voici la liste des langages et frameworks actuellement maîtrisés.</p>
+						<h4><i class="icon-share-alt icon-white"></i> Langages de programmation. Frameworks. </h4>
+						<div>
+							<div id="skills" class="content">
+								<ul>
+									<li>C / C++</li>
+									<li>Objective-C / Xcode / iOS</li>
+									<li>Python 3.x / 2.x (Django)</li>
+									<li>Javascript / Ajax</li>
+									<li>PHP5 / MYSQL</li>
+									<li>HTML5 / CSS3</li>
+									<li>Ruby / RoR</li>
+								</ul>
+							</div>
+							<div id="notation" class="content">
+								<ul>
+									<li class="four-star"></li>
+									<li class="four-star"></li>
+									<li class="three-star"></li>
+									<li class="three-star"></li>
+									<li class="three-star"></li>
+									<li class="three-star"></li>
+									<li class="one-star"></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="us" style="display: block; ">
+					<div class="content">
+						<p>Through my training, I gained a very strong base in programming. Now I have the ability to quickly assimilate any new programming languages​​ or frameworks. Here is the list of languages ​​and frameworks that I currently master.</p>
+						<h4><i class="icon-share-alt icon-white"></i> Programming langages. Frameworks. </h4>
+						<div>
+							<div id="skills" class="content">
+								<ul>
+									<li>C / C++</li>
+									<li>Objective-C / Xcode / iOS</li>
+									<li>Python 3.x / 2.x (Django)</li>
+									<li>Javascript / Ajax</li>
+									<li>PHP5 / MYSQL</li>
+									<li>HTML5 / CSS3</li>
+									<li>Ruby / RoR</li>
+								</ul>
+							</div>
+							<div id="notation" class="content">
+								<ul>
+									<li class="four-star"></li>
+									<li class="four-star"></li>
+									<li class="three-star"></li>
+									<li class="three-star"></li>
+									<li class="three-star"></li>
+									<li class="three-star"></li>
+									<li class="one-star"></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</body>
+</html>

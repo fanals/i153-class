@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    margin: 0;
+    font-family: "Lucida grande", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    color: #C6C6C6;
+    background-color: #2F2F2F;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+#container {
+    width: 960px;
+    margin: auto;
+}
+
+#validateHTML5 {
+    
+}
+
+a { text-decoration: none; color: #84BCDE;}
+a:hover {text-decoration: underline;}
+
+h2 {color: white;}
+
+button {cursor: pointer;}
+
+.centered {margin: auto;}
+
+.clear {clear: both;}
+
+.underline {color: #84BCDE;}
+
+.underline:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.section {
+    width: 45%;
+    height: 400px;
+    float: left;
+    background-color: #202020;
+    box-shadow: rgba(255, 255, 255, 0) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px
+}
+
+/*--------------- 1. Click ---------------*/
+
+#clickMe {
+    width: 156px;
+    height: 87px;
+    color: #F6900D;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: auto;
+    display: block;
+    margin-top: 26%;
+}
+
+/*--------------- 2. Hide/Show ---------------*/
+
+#wrapper {
+    width: 130px;
+}
+
+#hide {
+    float: left;
+    padding: 0px 10px;
+    width: 45px;
+    text-align: center;
+}
+
+#show {
+    float: right;
+    padding: 0px 10px;
+    width: 45px;
+    text-align: center;
+}
+
+#hidebox{
+	height: 200px;
+	width:200px;
+	background-color: #FB292D;
+    text-align: center;
+    padding-top: 5px;
+    color: #202020;
+}
+
+/*--------------- 3. Sliding ---------------*/
+
+#slider{
+	height: 200px;
+	width:200px;
+	background-color: orange;
+    color: #202020;
+    padding-top: 5px;
+    text-align: center;
+}
+
+/*--------------- 4. Fade In/Out ---------------*/
+
+#fader{
+	height: 200px;
+	width:200px;
+	background-color:#600;
+    cursor: pointer;
+    margin: auto;
+}
+
+#bringBack {
+    display: none;
+    float: left;
+}
+
+/*--------------- 5. Resize ---------------*/
+
+#animator {
+    height: 200px;
+    width: 200px;
+    background-color:#993;
+    margin-top: 20px;
+}
+
+/*--------------- 6. Dragging ---------------*/
+
+#draggable {
+    cursor: pointer;
+    display: inline;
+    left: 109px;
+    top: 83px;
+}

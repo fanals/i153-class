@@ -1,0 +1,230 @@
+
+body {
+  margin: 0;
+  font-family: "Lucida grande", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  color: #C6C6C6;
+  background-color: #2F2F2F;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin: 0 0 9px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: bold;
+  color: white;
+  margin-top: 3px;
+}
+
+#work > div {
+  height: 350px;
+}
+
+.clear {
+  clear: both;
+}
+
+.container {
+  width: 940px;
+  margin: auto;
+}
+
+.content {
+  width: 460px;
+  float: left;
+}
+
+.button {
+  padding: 6px 12px 6px;
+  font-size: 13px;
+  color: #333333;
+  text-align: center;
+  background-color: #f5f5f5;
+  border: 2px solid #cccccc;
+  transition:border 0.5s;
+  -webkit-transition:border 0.5s;
+  -o-transition:border 0.5s;
+  -moz-transition:border 0.5s;
+}
+
+.button:hover {
+  border: 2px solid green;
+  text-decoration: none;
+}
+
+.label {
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 14px;
+  color: #ffffff;
+  padding: 1px 4px 2px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+
+.label-red {
+  background-color: #B94A48;
+}
+
+.label-green {
+  background-color: #468847;
+}
+
+.red {
+  color: #B94A48;
+}
+
+.green {
+  color: #468847;
+}
+
+.purple {
+  color: #8181c8;
+}
+
+#profil {
+  margin-top: 44px;
+}
+
+#profile-picture {
+  float: left;
+  margin-right: 35px;
+}
+
+#print-download {
+  margin-top: 20px;
+}
+
+#flags {
+  margin-top: 10px;
+}
+
+#flags td {
+  width: 65px;
+  text-align: center;
+  height: 60px;
+}
+
+#flags img {
+  width: 48px;
+  cursor: pointer;
+  transition: width 0.2s;
+  -webkit-transition: width 0.2s;
+  -o-transition: width 0.2s;
+  -moz-transition: width 0.2s;
+}
+
+#flags img:hover {
+  width: 53px;
+}
+
+#info {
+  text-align: right;
+  margin-top: 19px;
+  width: 197px;
+}
+
+#education {
+  margin-top: 7px;
+}
+
+#expertise li {
+  margin: 5px;
+}
+
+#notation {
+  width: 200px;
+}
+
+#notation li {
+  background-image: url("notation.png");
+  height: 18px;
+  width: 79px;
+}
+
+#notation ul {
+  list-style: none;
+}
+
+.four-star { background-position: 0px 0px; }
+.three-star { background-position: 0px 51px; }
+.two-star { background-position: 0px 33px; }
+.one-star { background-position: 0px 16px; }
+
+#skills {
+  width: 240px;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url("icons.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+}
+
+.icon-white {
+  background-image: url("icons-white.png");
+}
+
+.icon-envelope {
+  background-position: -72px 0;
+}
+
+.icon-signal {
+  background-position: -408px 0;
+}
+
+.icon-home {
+  background-position: 0 -24px;
+}
+
+.icon-download-alt {
+  background-position: -96px -24px;
+}
+
+.icon-print {
+  background-position: -96px -48px;
+}
+
+.icon-map-marker {
+  background-position: -24px -72px;
+}
+
+.icon-share-alt {
+  background-position: -336px -96px;
+}
+
+.icon-arrow-left {
+  background-position: -240px -96px;
+}
+
+.icon-arrow-right {
+  background-position: -264px -96px;
+}
+
+.icon-arrow-up {
+  background-position: -289px -96px;
+}
+
+.icon-arrow-down {
+  background-position: -312px -96px;
+}
